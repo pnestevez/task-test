@@ -1,0 +1,99 @@
+.tasks {
+  width: 50vw;
+  min-width: 410px;
+  height: 65vh;
+  min-height: 460px;
+  padding: 40px;
+}
+@media (max-width: 820px) {
+  .tasks {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    min-height: 300px;
+  }
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 300;
+}
+.header h2 span {
+  margin: 0;
+  font-weight: 600;
+}
+@media (max-width: 820px) {
+  .header h2 {
+    font-size: 18px;
+  }
+}
+.header img {
+  height: 22px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.header img:hover {
+  background-color: whitesmoke;
+  transition: 0.25s;
+}
+
+.list {
+  height: 85%;
+  padding: 20px;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: gray 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.task {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+.color {
+  height: 20px;
+  width: 20px;
+  border-radius: 5px 5px 0 5px;
+}
+.title {
+  margin-left: 10px;
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.task img {
+  height: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.task img:hover {
+  background-color: rgb(110, 210, 200);
+}
+.task img:active {
+  background-color: rgb(220, 200, 190);
+}
